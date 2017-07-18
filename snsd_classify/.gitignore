@@ -1,0 +1,11 @@
+*_leveldb
+cifar10_*.prototxt
+*.caffemodel
+*.solverstate
+!snsd_cifar10_full_150717_iter_60000.caffemodel
+!snsd_cifar10_full_150717_iter_60000.solverstate
+*.DS_Store
+/python/*.jpg
+/python/*.jpeg
+/python/*.png
+.ipynb_checkpoints
