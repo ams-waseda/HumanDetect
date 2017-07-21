@@ -121,7 +121,7 @@ def detect(frame):
     MemberList.append(NameRGB("kanban",27, 26, 253))
 
     faces  = label(frame)
-    size =(64,64)
+    size =(60,60)
     #顔の認識
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     gray = cv2.equalizeHist(gray)
@@ -204,9 +204,9 @@ if __name__ == "__main__":
         mean_blob.height,
         mean_blob.width))
     classifier = caffe.Classifier(
-        '../snsd_cifar10_full.prototxt',
-        '../snsd_cifar10_full_iter_60.caffemodel',
-        mean=mean_array,
+        '../cifar10_full.prototxt',
+        '../snsd_cifar10_full_iter_1050.caffemodel',
+        channel_swap=(2,1,0),
         raw_scale=255)
 
     frame = detect(in_image)

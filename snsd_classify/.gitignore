@@ -2,6 +2,7 @@
 cifar10_*.prototxt
 *.caffemodel
 *.solverstate
+*.prototxt
 !snsd_cifar10_full_150717_iter_60000.caffemodel
 !snsd_cifar10_full_150717_iter_60000.solverstate
 *.DS_Store
@@ -9,3 +10,4 @@ cifar10_*.prototxt
 /python/*.jpeg
 /python/*.png
 .ipynb_checkpoints
+*.png

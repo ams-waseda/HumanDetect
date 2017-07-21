@@ -85,7 +85,7 @@ if __name__ == "__main__":
     image_path = "./"+argvs[1]
     # file_namesにディレクトリ込みのファイルネームを格納
     file_names = filenamelist(image_path)
-    size = 50
+    size = 100
     for file_name in file_names:
 	    in_image =  cv2.imread(file_name)
 	    i=1;
@@ -94,7 +94,7 @@ if __name__ == "__main__":
             name_out = name[2].split(".")
 	    print(name)
 	    for (x, y, w, h ,area) in kanban:
-                if h*w > size
+                if area > size
 	    	dst=in_image[y:y+h,x:x+w]
 		img_name = "./" +argvs[1]+"_detect"+"/"+ name[2]+"_"+str(i) + '.png'
 		cv2.imwrite(img_name,dst)
